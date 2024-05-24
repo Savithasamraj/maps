@@ -23,7 +23,7 @@ const fetchMovie = async () => {
 
 const renderItem = ({ item }) => (
     <View style={styles.card}>
-      <Image source={{ uri: item.image }} style={styles.image} />
+      <Image source={{ uri:'https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/The_Super_Mario_Bros._Movie_logo.png/1055px-The_Super_Mario_Bros._Movie_logo.png' }} style={styles.image} />
       <Text style={styles.title}>{item.movie}</Text>
       <Text style={styles.rating}>Rating: {item.rating}</Text>
       <TouchableOpacity onPress={() => Linking.openURL(item.imdb_url)}>
